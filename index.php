@@ -1,9 +1,9 @@
 <?php
 session_start();
 if (isset($_POST['logout'])) {
-    session_unset(); // Remove all session variables
-    session_destroy(); // Destroy the session
-    header("Location: pages/login.php"); // Redirect to login page
+    session_unset(); 
+    session_destroy(); 
+    header("Location: pages/login.php"); 
     exit(); 
 }
 
